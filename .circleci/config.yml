@@ -12,7 +12,9 @@ jobs:
       - run:
           name: Run tests
           command: pytest
-
+      - run:
+          name: Run main.py script
+          command: python main.py 
 workflows:
   version: 2
   build_and_test:
